@@ -1,8 +1,8 @@
 class Openlex < Formula
   desc "Open-source, local-first legal AI engine and CLI"
   homepage "https://github.com/N9394/openlex"
-  url "https://github.com/N9394/openlex/releases/download/v0.2.0/openlex-0.2.0.tar.gz"
-  sha256 "cc073d7494beb4ff15efd0673eb9c8a1a581d6ccd663b8fc78d6599998f7fdd5"
+  url "https://github.com/N9394/openlex/releases/download/v0.2.1/openlex-0.2.1.tar.gz"
+  sha256 "ffa396dca5e273df2862a9fd1ca934136cc1cc9661c0dfeaadca2ceb08abf806"
   license "Apache-2.0"
 
   depends_on "node"
@@ -15,14 +15,15 @@ class Openlex < Formula
 
   def caveats
     <<~EOS
-      Start the engine with:
+      Start OpenLex:
+        openlex            # the terminal app (setup wizard on first run)
+      or run only the engine:
         openlex serve
-      Then, in another terminal:
-        openlex status
 
-      Models: use your own key (Settings or the local API), or run a local model:
+      Models: bring your own key (openlex use anthropic; openlex key anthropic),
+      or run a local model:
         brew install llama.cpp      # OpenLex finds llama-server on PATH
-      The data policy is local-only until you allow a provider.
+      Client data stays on this computer until you allow a provider (openlex policy).
     EOS
   end
 
