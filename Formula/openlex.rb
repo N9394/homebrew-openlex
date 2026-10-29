@@ -1,8 +1,8 @@
 class Openlex < Formula
   desc "Open-source, local-first legal AI engine and CLI"
   homepage "https://github.com/N9394/openlex"
-  url "https://github.com/N9394/openlex/releases/download/v0.2.2/openlex-0.2.2.tar.gz"
-  sha256 "cf2ae28108da8032acd784ad44dddbb3fea247b8e8a72e7e24a07ac68e409f5c"
+  url "https://github.com/N9394/openlex/releases/download/v0.2.3/openlex-0.2.3.tar.gz"
+  sha256 "a7eb0b197624d3a548be3aa0d3e21691a10a0fb96b20d09e94b893711a3ac2bc"
   license "Apache-2.0"
 
   depends_on "node"
